@@ -1,0 +1,104 @@
+body{
+  margin:0;
+  padding:0;
+
+  background-image: url("assets/fundo.jpg");
+  background-size: cover;
+  background-position: center -130px;
+  background-repeat: no-repeat;
+
+  font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-family: "HF Poet";
+}
+
+main{
+  flex:1;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(247, 188, 213);
+  color: white;
+}
+
+#icon {
+  width: 62px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "HF Poet";
+}
+
+p {
+  color: black;
+  font-family: "HF Poet";
+}
+
+.desconto {
+  color: rgb(180, 5, 78);
+  font-family: "HF Poet";
+}
+
+.cupom {
+  color: rgb(180, 5, 78);
+  font-family: "HF Poet";
+}
+
+.preco {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: auto;
+  font-family: "HF Poet";
+}
+
+.noticias {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: rgb(247, 188, 213);
+  padding: 20px;
+  margin: 40px;
+  border-radius: 40px;
+}
+
+.noticia{
+  background-color:rgb(255, 255, 255);
+  border:2px solid rgb(230, 169, 194);
+  padding:10px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  width:280px;
+  height:340px;
+
+  border-radius:20px;
+}
+
+.img_noticia {
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  background-color: rgb(247, 188, 213);
+  text-align:left;
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  margin: 20px;
+  border-radius: 40px;
+  width: 6%;
+}
