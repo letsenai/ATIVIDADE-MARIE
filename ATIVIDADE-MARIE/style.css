@@ -15,10 +15,6 @@ h2 {
   font-family: "HF Poet";
 }
 
-main{
-  flex:1;
-}
-
 .fixo{
   position: fixed;
   right: 20px;
@@ -114,7 +110,15 @@ p {
   opacity:0;
   transform: translateY(20px);
   animation: aparecer 0.6s forwards;
+  animation-delay: 0.3s;
+  transition: 0.3s;
 }
+
+.noticia:nth-child(1){ animation-delay: 0.2s; }
+.noticia:nth-child(2){ animation-delay: 0.4s; }
+.noticia:nth-child(3){ animation-delay: 0.6s; }
+.noticia:nth-child(4){ animation-delay: 0.8s; }
+.noticia:nth-child(5){ animation-delay: 1s; }
 
 @keyframes aparecer{
   to{
@@ -123,14 +127,10 @@ p {
   }
 }
 
-.noticia:hover{
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
 .img_noticia {
   width: 200px;
   height: 200px;
+  object-fit: contain;
 }
 
 footer {
