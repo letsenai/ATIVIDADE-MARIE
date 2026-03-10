@@ -11,6 +11,7 @@ body{
 }
 
 h2 {
+  color: black;
   font-family: "HF Poet";
 }
 
@@ -18,12 +19,31 @@ main{
   flex:1;
 }
 
+.fixo{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  background-color: rgb(247,188,213);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "HF Poet";
+}
+
 #navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+
   background-color: rgb(247, 188, 213);
-  color: white;
+  padding: 10px 40px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+#links{
+  display:flex;
+  gap:20px;
+  list-style:none;
 }
 
 #icon {
@@ -36,6 +56,10 @@ a {
   font-size: 15px;
   font-weight: bold;
   font-family: "HF Poet";
+}
+
+li {
+    color: black;
 }
 
 p {
@@ -62,9 +86,10 @@ p {
 
 .noticias {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  gap: 20px;
   background-color: rgb(247, 188, 213);
   padding: 20px;
   margin: 40px;
@@ -85,6 +110,22 @@ p {
   height:340px;
 
   border-radius:20px;
+
+  opacity:0;
+  transform: translateY(20px);
+  animation: aparecer 0.6s forwards;
+}
+
+@keyframes aparecer{
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+.noticia:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 .img_noticia {
@@ -95,10 +136,14 @@ p {
 footer {
   background-color: rgb(247, 188, 213);
   text-align:left;
-  font-size: 10px;
+  font-size: 12px;
   color: rgb(0, 0, 0);
   padding: 5px;
   margin: 20px;
   border-radius: 40px;
-  width: 6%;
+  width: 170px;
+  position:relative;
+  bottom: 20px;
+
+  margin-left: 2%;
 }
